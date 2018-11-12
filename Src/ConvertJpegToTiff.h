@@ -8,7 +8,7 @@
 
 #include "GraphicsFile.h"
 
-void ConvertGraphicsFileToTiff(GraphicsVector& G, std::wstring& outfilename);
+void ConvertJpegToTiff(GraphicsVector& G, std::wstring& outfilename);
 
 
 #endif

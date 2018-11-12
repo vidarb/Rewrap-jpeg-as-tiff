@@ -33,5 +33,4 @@ Offset_t AddSegmentPadded(GraphicsVector& vec, std::shared_ptr<FileSegment> seg)
 
 void Dump(const GraphicsVector& vec);
 
-
 #endif

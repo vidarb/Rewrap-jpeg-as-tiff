@@ -83,3 +83,4 @@ TIFFTAG_MACRO(  PreviewSettingsDigest,       PreviewIFD, Byte,      50969  )
 TIFFTAG_MACRO(  PreviewColorSpace,           PreviewIFD, Long,      50970  )
 TIFFTAG_MACRO(  PreviewDateTime,             PreviewIFD, Ascii,     50971  )
 TIFFTAG_MACRO(  NewRawImageDigest,           Main,       Byted,     51111  )
+

@@ -64,6 +64,7 @@ public:
 	~AsByte() = default;
 };
 
+
 class AsShort
 {
 	uint16_t m_data[2];

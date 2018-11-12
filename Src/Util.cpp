@@ -64,7 +64,6 @@ namespace vibo
 	}
 
 
-
 	// ------------------------------------------------------------------------------------------
 	//			file_exists()
 	// ------------------------------------------------------------------------------------------
@@ -107,6 +106,7 @@ namespace vibo
 		return vec;
 	}
 
+	
 	ULong_t GetULong(FILE* f, Endianness e)
 	{
 		ByteVector vec(4);
@@ -212,6 +212,7 @@ namespace vibo
 		return static_cast<SLong_t>(retval);
 	}
 
+	
 	Endianness GetSystemEndianness()
 	{
 		static const int i = 1;

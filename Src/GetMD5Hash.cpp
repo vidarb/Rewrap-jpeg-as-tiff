@@ -7,6 +7,7 @@
 #include "Md5.h"
 #include "Exception.h"
 
+
 namespace vibo
 {
 	std::wstring GetMD5Hash(const ByteVector& vec)

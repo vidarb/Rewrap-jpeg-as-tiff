@@ -50,7 +50,6 @@ void FileSegment::SetOffset(int offset)
 }
 
 
-
 void FileSegment::ReadData(FILE* f)
 {
 	ASSERT(m_size > 0);
@@ -71,7 +70,6 @@ void FileSegment::RebuildBinaryData()
 }
 
 
-
 int FileSegment::GetDataByte(int idx) const
 {
 	ASSERT(vibo::size(m_data) > idx);
@@ -83,6 +81,7 @@ void FileSegment::SetLabel(const std::wstring& label)
 {
 	m_label = label;
 }
+
 
 std::wstring FileSegment::Label() const
 {
@@ -100,6 +99,7 @@ void FileSegment::InterpretData()
 {
 	// No action in base class
 }
+
 
 std::shared_ptr<FileSegment> FileSegment::Clone()
 {

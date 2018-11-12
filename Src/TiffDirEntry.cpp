@@ -65,7 +65,7 @@ TiffDirEntry& TiffDirEntry::operator=(const TiffDirEntry& rhs)
 
 TiffDirEntry::TiffDirEntry(int tagid, int datatype, int datacount, const AsOffset& offset, Endianness e) : m_endianness(e), m_tagID(tagid), m_dataType(datatype), m_dataCount(datacount), m_storageLogic(StorageLogic::OffsetData)
 {
-	ASSERT(datacount*TiffDatatypeLength(datatype) >= 4); // Usually > 4. However, some tags hold a single offset to a large block of memory (for example stripByteCounts)
+	ASSERT(datacount*TiffDatatypeLength(datatype) >= 4); // Usually > 4. However, some tags hold a single offset to a large block of memory (for example stripByteCounts).
 	uint32_t value = offset.value();
 	unsigned char* bytePointer = reinterpret_cast<unsigned char*>(&value);
 

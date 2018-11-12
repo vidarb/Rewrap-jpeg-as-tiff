@@ -63,13 +63,9 @@ int wmain(int argc, wchar_t* argv[])
 			std::wcerr << L"Outfile: " << outfile_name << std::endl;
 
 			ReadFile(infile_name, G);
-			
 			// std::wcout << L"\n\n";
 			// Dump(G);
-
-
-			// TESTING
-			ConvertGraphicsFileToTiff(G, outfile_name);
+			ConvertJpegToTiff(G, outfile_name);
 		}
 	}
 	catch (std::wstring& e)

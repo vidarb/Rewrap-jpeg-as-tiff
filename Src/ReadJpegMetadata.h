@@ -25,5 +25,4 @@ struct exif_info
 
 exif_info ReadApp1Metadata(std::vector<std::shared_ptr<JpegApp1Segment>>& App1Segments);
 
-
 #endif

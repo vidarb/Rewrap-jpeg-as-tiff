@@ -40,7 +40,6 @@ void Dump(const GraphicsVector& vec)
 }
 
 
-
 // --------------------------------------------------------------------------------------------------------------------
 //		Free function: GetEndianness()
 // --------------------------------------------------------------------------------------------------------------------
@@ -56,5 +55,4 @@ Endianness GetEndianness(Filetype t)
 	ASSERT(false);
 	return Endianness::Little; // Whatever, never reached.
 }
-
 

@@ -109,7 +109,7 @@ ByteVector ReadIccProfile(std::vector<std::shared_ptr<JpegApp2Segment>>& App2Seg
 		}
 	}
 
-	/* for debugging
+	/* for debugging...
 	FILE* dump = _wfopen(L"F:/TIFF-convert/memdump.bin", L"wb");
 	if (dump != 0)
 	{

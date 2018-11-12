@@ -37,7 +37,6 @@ namespace vibo
 
 	std::string to_string(const std::wstring& wstr);
 	std::wstring to_wstring(const std::string& str);
-
 }
 
 #define ASSERT(condition) if (!(condition)) {throw(vibo::Exception(L"Assert failure", __FILE__, __LINE__));}

@@ -88,8 +88,7 @@ namespace vibo
 	}
 
 
-
-	Exception::Exception(const Exception& rhs) throw()
+		Exception::Exception(const Exception& rhs) throw()
 	:	exception(rhs),
 		m_msg(rhs.m_msg),
 		m_fileName(rhs.m_fileName),

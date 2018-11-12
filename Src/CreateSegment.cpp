@@ -44,6 +44,7 @@ ReverseSegmenttypeMap& ReverseSegmenttypeMap::GetInstance()
 	return theMap;
 }
 
+
 void ReverseSegmenttypeMap::Insert(const std::type_index& typ, Segmenttype seg, const std::wstring& str)
 {
 	ASSERT(seg != Segmenttype::Undefined); // Illegal to insert type info associated with Undefined segment
@@ -79,9 +80,6 @@ std::wstring  ReverseSegmenttypeMap::LookupString(const std::type_index& typ)
 	}
 	return std::get<std::wstring>(it->second);
 }
-
-
-
 
 
 // --------------------------------------------------------------------------------------------------------------------

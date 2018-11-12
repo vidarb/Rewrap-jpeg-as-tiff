@@ -20,7 +20,6 @@ Offset_t ReadTiffHeader(FILE* f, Filetype ft, GraphicsVector& G, Offset_t offset
 void ReadTiffDirectories(FILE* f, Filetype ft, GraphicsVector& G, Offset_t offset);
 void ReadTiffOtherData(FILE* f, GraphicsVector& G, Segmenttype seg, Endianness e, int offset, int datasize);
 
-
 std::vector<uint32_t> ReadTiffNumericVector(FILE* f, Endianness e, const TiffDirEntry& E);
 
 

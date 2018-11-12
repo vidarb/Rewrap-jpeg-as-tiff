@@ -62,6 +62,7 @@ Offset_t TiffHeader::GetDirectoryOffset() const
 	return m_directoryOffset;
 }
 
+
 void TiffHeader::RebuildBinaryData()
 {
 	int32_t dirOffset = m_directoryOffset;
@@ -96,6 +97,7 @@ void TiffHeader::RebuildBinaryData()
 		m_data.push_back(bytes[0]);
 	}
 }
+
 
 void TiffHeader::InterpretData()
 {

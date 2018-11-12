@@ -17,4 +17,5 @@ std::shared_ptr<FileSegment> CreateSegment(Segmenttype seg, Endianness e, Offset
 Segmenttype GetSegmenttype(const FileSegment& fs);
 std::wstring GetSegmentName(const FileSegment& fs);
 
+
 #endif

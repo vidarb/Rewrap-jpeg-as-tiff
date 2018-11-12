@@ -76,7 +76,6 @@ namespace vibo
 	{
 		return static_cast<int>(t.size());
 	};
-
 }
 
 

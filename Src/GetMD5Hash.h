@@ -14,5 +14,4 @@ namespace vibo
 	std::wstring GetMD5Hash(const ByteVector& vec);
 }
 
-
 #endif

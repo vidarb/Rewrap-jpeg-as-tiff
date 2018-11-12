@@ -216,6 +216,5 @@ public:
 	~JpegUnknownSegment() = default;
 };
 
-
 #endif
 

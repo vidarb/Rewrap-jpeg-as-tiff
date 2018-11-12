@@ -6,7 +6,6 @@
 #pragma warning(disable: 4996)
 
 #include "ConvertJpegToTiff.h"
-
 #include "GraphicsFile.h"
 #include "TiffSegments.h"
 #include "JpegSegments.h"
@@ -78,13 +77,9 @@ std::shared_ptr<FileSegment> MakeJpegEndOfImage(Offset_t offset)
 }
 
 
-
-// ##############################################
-// ##############################################
-// ##############################################
-// ##############################################
-// ##############################################
-
+// --------------------------------------------------------------------------------------------------------------------
+//		Write_Selected_Entries()
+// --------------------------------------------------------------------------------------------------------------------
 
 typedef bool selector_function(int, int);
 
@@ -170,6 +165,9 @@ std::vector<TiffDirEntry> Write_Selected_Entries(std::vector<std::tuple<TiffDirE
 }
 
 
+// --------------------------------------------------------------------------------------------------------------------
+//		Selector functions
+// --------------------------------------------------------------------------------------------------------------------
 
 bool relevant_gps_tags(int tag, int datatype)
 {
@@ -205,7 +203,11 @@ bool relevant_main_directory_tags(int tag, int datatype)
 }
 
 
-void ConvertGraphicsFileToTiff(GraphicsVector& G, std::wstring& outfilename)
+// --------------------------------------------------------------------------------------------------------------------
+//		Convert Jpeg to TIFF
+// --------------------------------------------------------------------------------------------------------------------
+
+void ConvertJpegToTiff(GraphicsVector& G, std::wstring& outfilename)
 {
 	Endianness TiffFileEndianness = Endianness::Little;
 
